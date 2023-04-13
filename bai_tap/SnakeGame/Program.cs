@@ -41,8 +41,8 @@
             bool isOver = false;
             int x = 2;
             int y = 2;
-            int[] X= new int[15];
-            int[] Y= new int[15];
+            int[] X= new int[50];
+            int[] Y= new int[50];
             X[0] =2;
             Y[0] =2;
             int PointX = 10;
@@ -102,11 +102,11 @@
                         isOver = true;
                     }
                 }
-                if( 39<X[0] ||X[0] <1 || 18 < Y[0] || Y[0]< 1){
+                if( width-1 <X[0] ||X[0] < 1 || height-2 < Y[0] || Y[0]< 1){
                     isOver = true;
                 }
 
-                Write(23, 23,"score: " +score.ToString());
+                Write(23, 23,"Score: " +score.ToString());
                 
                 
                 DrawBorder(width, height);
