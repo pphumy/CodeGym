@@ -83,16 +83,27 @@
                         break;
                         
                             
-                    
+                    /*|
+                    |00000*
+                    |0000***
+                    |000*****
+                    |00*******
+                    |0*********
+                    |***********
+                    */
                     case 3:
                         int i, j, k;
-                        for (i = 5; i >= 1; i--){
-                            for (j = 5; j > i; j--){
+                        Console.WriteLine("Nhap so canh");
+                        int canh = Int32.Parse(Console.ReadLine());
+                        for (i = 1; i <= canh; i++){
+                            for (j = i; j <=canh; j++){
                                 Console.Write(" ");
+                            
                             }
-                            for (k = 1; k < (i * 2); k++){
+                                for (k = 1; k <(i * 2); k++){
                                 Console.Write("*");
                             }
+                            
                             Console.WriteLine();
                         }
                         break;
