@@ -1,4 +1,4 @@
-public class Square : Rectangle
+public class Square : Rectangle, IResizable
 
     {
 
@@ -66,6 +66,12 @@ public class Square : Rectangle
 
                     + base.ToString();
 
+        }
+        void IResizable.Resize(double percent)
+        {
+            double factor = percent / 100.0;
+            double Size = GetSide();
+            Size = 1*factor;
         }
 
     }

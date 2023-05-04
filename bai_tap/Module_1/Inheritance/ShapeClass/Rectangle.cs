@@ -1,4 +1,4 @@
-public class Rectangle : Shape
+public class Rectangle : Shape, IResizable
 
     {
 
@@ -98,4 +98,9 @@ public class Rectangle : Shape
 
         }
 
+    public void Resize(double percent)
+    {
+        width *= percent / 100.0;
+        length *= percent / 100.0;
     }
+}

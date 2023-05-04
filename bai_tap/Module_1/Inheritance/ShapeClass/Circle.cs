@@ -1,4 +1,4 @@
-public class Circle : Shape
+public class Circle : Shape, IResizable
 
     {
 
@@ -72,4 +72,8 @@ public class Circle : Shape
 
         }
 
+    public void Resize(double percent)
+    {
+        radius *= (1 + percent / 100);
     }
+}
