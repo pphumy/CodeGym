@@ -40,6 +40,8 @@ static void Main(string[] args)
                 Console.WriteLine(square);
 
                 square = new Square(2.3);
+                square.HowToColor();
+                
 
                 Console.WriteLine(square);
 

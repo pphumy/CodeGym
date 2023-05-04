@@ -1,4 +1,4 @@
-public class Square : Rectangle, IResizable
+public class Square : Rectangle, IResizable, IColorable
 
     {
 
@@ -74,4 +74,8 @@ public class Square : Rectangle, IResizable
             Size = 1*factor;
         }
 
+    public void HowToColor()
+    {
+        Console.WriteLine("Fill up the area");
     }
+}
